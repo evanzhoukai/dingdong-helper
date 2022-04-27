@@ -509,7 +509,7 @@ public class Api {
             context.put("success", new HashMap<>());
             context.put("end", new HashMap<>());
             for (int i = 0; i < 10; i++) {
-                System.out.println("恭喜你，已成功下单 当前下单总金额：" + cartMap.get("total_money"));
+                System.out.println("【 "+AjkDateUtil.formatDateTime(new Date())+" 】====恭喜你，已成功下单 当前下单总金额：" + cartMap.get("total_money"));
             }
             return true;
         } catch (Exception e) {

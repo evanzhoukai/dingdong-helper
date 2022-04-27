@@ -12,10 +12,10 @@ public class UserConfig {
     public static final String cityId = "0101";//默认上海
 
     //站点id
-    public static final String stationId = "";
+    public static final String stationId = "5aefd021c5702e08048bf23d";
 
     //收货地址id
-    public static final String addressId = "";
+    public static final String addressId = "5f0a6a441316eb106b85a7cd";
 
     /**
      * 确认收货地址id和站点id
@@ -23,6 +23,7 @@ public class UserConfig {
      */
     public static void main(String[] args) {
         Api.checkUserConfig();
+        System.out.println("【 "+AjkDateUtil.formatDateTime(new Date())+" 】=====执行结束");
     }
 
     /**
@@ -43,12 +44,12 @@ public class UserConfig {
         headers.put("referer", "https://servicewechat.com/wx1e113254eda17715/425/page-frame.html");
 
         // ------------  填入以下6项 上面不要动 ------------
-        headers.put("ddmc-device-id", "");
-        headers.put("cookie", "");
-        headers.put("ddmc-longitude", "");
-        headers.put("ddmc-latitude", "");
-        headers.put("ddmc-uid", "");
-        headers.put("user-agent", "");
+        headers.put("ddmc-device-id", "osP8I0RGD5l8EeaE5ugNkZ1FkR6o");
+        headers.put("cookie", "DDXQSESSID=77be6c2d0827f7d2ab94c8aa43b8b0d1");
+        headers.put("ddmc-longitude", "121.765909");
+        headers.put("ddmc-latitude", "31.033566");
+        headers.put("ddmc-uid", "5d0604deebec5815af1408cb");
+        headers.put("user-agent", "Mozilla/5.0 (iPhone; CPU iPhone OS 15_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.20(0x1800142d) NetType/WIFI Language/zh_CN");
         return headers;
     }
 
@@ -75,8 +76,8 @@ public class UserConfig {
         body.put("openid", headers.get("ddmc-device-id"));
 
         // ------------  填入这2项上面不要动 ------------
-        body.put("s_id", "");
-        body.put("device_token", "");
+        body.put("s_id", "77be6c2d0827f7d2ab94c8aa43b8b0d1");
+        body.put("device_token", "WHJMrwNw1k/FKPjcOOgRd+CcD+MS0Z80pDUvPJfqxq/wjRtiQhsqOlURijdXwKVwj7naP2ABAaHTvbd8V+ASr/o3kieHoGOuddCW1tldyDzmauSxIJm5Txg==1487582755342");
         return body;
     }
 }

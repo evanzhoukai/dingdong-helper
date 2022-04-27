@@ -1,3 +1,4 @@
+import java.util.Date;
 import java.util.Map;
 
 /**
@@ -26,6 +27,7 @@ public class ApplicationTest {
             return;
         }
         Api.addNewOrder(UserConfig.addressId, cartMap, multiReserveTimeMap, checkOrderMap);
+        System.out.println(AjkDateUtil.formatDate(new Date())+"执行结束");
     }
 }
 
