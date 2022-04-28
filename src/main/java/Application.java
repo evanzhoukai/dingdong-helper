@@ -54,8 +54,8 @@ public class Application {
 
 
         //5点59分30秒时间触发
-//        while (policy == 2 && !timeTrigger(5, 59, 30)) {
-//        }
+        while (policy == 2 && !timeTrigger(5, 59, 30)) {
+        }
 
         //8点29分30秒时间触发
         while (policy == 3 && !timeTrigger(8, 29, 30)) {
